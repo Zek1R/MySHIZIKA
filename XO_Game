@@ -24,7 +24,7 @@ root.geometry("500x650")
 
 pr = False
 s = 0
-
+f1, f2, f3, f4, f5, f6, f7, f8, f9 = 1, 1, 1, 1, 1, 1, 1, 1, 1
 
 def btn1_click():
     global s
@@ -56,118 +56,153 @@ def btn9_click():
 
 
 def show_btnx_text():
-    global s
-    global pr
-    if s == 1 and pr != True:
+    global s, pr
+    global f1, f2, f3, f4, f5, f6, f7, f8, f9
+
+    if s == 1 and pr != True and f1 == 1:
         btn_a1["text"] = btn_X["text"]
         a[0][0] = btn_a1["text"]
         pr = proverka(a)
+        f1 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 2 and pr != True:
+
+    if s == 2 and pr != True and f2 == 1:
         btn_a2["text"] = btn_X["text"]
         a[0][1] = btn_a2["text"]
         pr = proverka(a)
+        f2 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 3 and pr != True:
+
+    if s == 3 and pr != True and f3 == 1:
         btn_a3["text"] = btn_X["text"]
         a[0][2] = btn_a3["text"]
         pr = proverka(a)
+        f3 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 4 and pr != True:
+
+    if s == 4 and pr != True and f4 == 1 :
         btn_a4["text"] = btn_X["text"]
         a[1][0] = btn_a4["text"]
         pr = proverka(a)
+        f4 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 5 and pr != True:
-        btn_a5["text"] = btn_O["text"]
+
+    if s == 5 and pr != True and f5 == 1:
+        btn_a5["text"] = btn_X["text"]
         a[1][1] = btn_a5["text"]
         pr = proverka(a)
+        f5 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 6 and pr != True:
+
+    if s == 6 and pr != True and f6 == 1:
         btn_a6["text"] = btn_X["text"]
         a[1][2] = btn_a6["text"]
         pr = proverka(a)
+        f6 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 7 and pr != True:
+
+    if s == 7 and pr != True and f7 == 1:
         btn_a7["text"] = btn_X["text"]
         a[2][0] = btn_a7["text"]
         pr = proverka(a)
+        f7 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 8 and pr != True:
+
+    if s == 8 and pr != True and f8 == 1:
         btn_a8["text"] = btn_X["text"]
         a[2][1] = btn_a8["text"]
         pr = proverka(a)
+        f8 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 9 and pr != True:
+
+    if s == 9 and pr != True and f9 == 1:
         btn_a9["text"] = btn_X["text"]
         a[2][2] = btn_a9["text"]
         pr = proverka(a)
+        f9 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
 
 def show_btn0_text():
-    global s
-    global pr
-    if s == 1 and pr != True:
+    global s, pr
+    global f1, f2, f3, f4, f5, f6, f7, f8, f9
+    if s == 1 and pr != True and f1 == 1:
         btn_a1["text"] = btn_O["text"]
         a[0][0] = btn_a1["text"]
         pr = proverka(a)
+        f1 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 2 and pr != True:
+
+    if s == 2 and pr != True and f2 == 1:
         btn_a2["text"] = btn_O["text"]
         a[0][1] = btn_a2["text"]
         pr = proverka(a)
+        f2 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 3 and pr != True:
+
+    if s == 3 and pr != True and f3 == 1:
         btn_a3["text"] = btn_O["text"]
         a[0][2] = btn_a3["text"]
         pr = proverka(a)
+        f3 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 4 and pr != True:
+
+    if s == 4 and pr != True and f4 == 1:
         btn_a4["text"] = btn_O["text"]
         a[1][0] = btn_a4["text"]
         pr = proverka(a)
+        f4 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 5 and pr != True:
+
+    if s == 5 and pr != True and f5 == 1:
         btn_a5["text"] = btn_O["text"]
         a[1][1] = btn_a5["text"]
         pr = proverka(a)
+        f5 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 6 and pr != True:
+
+    if s == 6 and pr != True and f6 == 1:
         btn_a6["text"] = btn_O["text"]
         a[1][2] = btn_a6["text"]
         pr = proverka(a)
+        f6 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 7 and pr != True:
+
+    if s == 7 and pr != True and f7 == 1:
         btn_a7["text"] = btn_O["text"]
         a[2][0] = btn_a7["text"]
         pr = proverka(a)
+        f7 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 8 and pr != True:
+
+    if s == 8 and pr != True and f8 == 1:
         btn_a8["text"] = btn_O["text"]
         a[2][1] = btn_a8["text"]
         pr = proverka(a)
+        f8 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
-    if s == 9 and pr != True:
+
+    if s == 9 and pr != True and f9 == 1:
         btn_a9["text"] = btn_O["text"]
         a[2][2] = btn_a9["text"]
         pr = proverka(a)
+        f9 = 0
         if pr == True:
             lbl1["text"] = "Ты победил!!!"
 
