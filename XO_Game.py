@@ -23,7 +23,7 @@ root = Tk()
 root.title("XO_Game")
 root.geometry("500x650")
 root.resizable(width=False, height=False)
-bg = ImageTk.PhotoImage(file="C:\\Users\\kir\\PycharmProjects\\XOgame\\XOwlpp.png")
+bg = ImageTk.PhotoImage(file="XOwlpp.png")
 
 canvas = Canvas(root, width=350, height=500)
 canvas.pack(fill="both", expand=True)
